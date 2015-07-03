@@ -34,6 +34,10 @@ class MainTableViewController: UITableViewController, UITableViewDelegate, UITab
         // Dispose of any resources that can be recreated.
     }
     
+    override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return CGFloat(120)
+    }
+
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         let sb = UIStoryboard(name:"Main", bundle: nil)
         let vc = sb.instantiateViewControllerWithIdentifier("ProductListViewController") as! UIViewController

@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -13,16 +14,29 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NbA-vC-DcQ">
-                        <rect key="frame" x="217" y="26" width="42" height="21"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="x7p-Dk-hqg">
+                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MainListItem" translatesAutoresizingMaskIntoConstraints="NO" id="x7p-Dk-hqg">
                         <rect key="frame" x="0.0" y="0.0" width="365" height="95"/>
                     </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NbA-vC-DcQ">
+                        <rect key="frame" x="232" y="62" width="125" height="25"/>
+                        <color key="backgroundColor" red="0.90196079015731812" green="0.90196079015731812" blue="0.90196079015731812" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="G37-DA-B61"/>
+                            <constraint firstAttribute="width" constant="125" id="fjT-9y-DpF"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottomMargin" secondItem="x7p-Dk-hqg" secondAttribute="bottom" constant="-8" id="26x-hJ-O7b"/>
+                    <constraint firstItem="x7p-Dk-hqg" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-8" id="IJd-1P-A7h"/>
+                    <constraint firstItem="NbA-vC-DcQ" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="NYG-Xp-mYI"/>
+                    <constraint firstItem="x7p-Dk-hqg" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-8" id="dX9-aU-fq5"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="x7p-Dk-hqg" secondAttribute="trailing" constant="-8" id="i01-ih-7oZ"/>
+                    <constraint firstItem="NbA-vC-DcQ" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" id="kkw-rZ-0CM"/>
+                </constraints>
             </tableViewCellContentView>
             <connections>
                 <outlet property="name" destination="NbA-vC-DcQ" id="J6R-em-KqK"/>
@@ -30,4 +44,7 @@
             <point key="canvasLocation" x="267.5" y="297"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="MainListItem" width="426" height="222"/>
+    </resources>
 </document>
