@@ -20,12 +20,12 @@
                             <constraint firstAttribute="height" constant="130" id="tjo-Cp-t0X"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NbA-vC-DcQ">
-                        <rect key="frame" x="209" y="73" width="195" height="45"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NbA-vC-DcQ">
+                        <rect key="frame" x="225" y="77" width="195" height="45"/>
                         <color key="backgroundColor" red="0.90196079015731812" green="0.90196079015731812" blue="0.90196079015731812" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="195" id="Pwu-WE-hya"/>
-                            <constraint firstAttribute="height" constant="45" id="cdj-jz-9P1"/>
+                            <constraint firstAttribute="width" constant="195" id="bce-eQ-xeF"/>
+                            <constraint firstAttribute="height" constant="45" id="c7R-6m-jCR"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -33,12 +33,12 @@
                     </label>
                 </subviews>
                 <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="NbA-vC-DcQ" secondAttribute="trailing" constant="-16" id="5g8-nK-v1Z"/>
                     <constraint firstItem="x7p-Dk-hqg" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-16" id="Gj6-YI-UAu"/>
-                    <constraint firstAttribute="bottomMargin" secondItem="NbA-vC-DcQ" secondAttribute="bottom" constant="7" id="P9n-Cz-LGn"/>
+                    <constraint firstItem="NbA-vC-DcQ" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" id="Tst-I4-e6a"/>
                     <constraint firstAttribute="trailingMargin" secondItem="x7p-Dk-hqg" secondAttribute="trailing" constant="-16" id="XYy-ZM-YvY"/>
                     <constraint firstAttribute="bottomMargin" secondItem="x7p-Dk-hqg" secondAttribute="bottom" constant="-8" id="kcf-Hi-paw"/>
                     <constraint firstItem="x7p-Dk-hqg" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-8" id="lZX-Jc-dTo"/>
-                    <constraint firstItem="NbA-vC-DcQ" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="xOx-TC-0kc"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
