@@ -40,7 +40,7 @@ class MainTableViewController: UITableViewController, UITableViewDelegate, UITab
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         let sb = UIStoryboard(name:"Main", bundle: nil)
-        let vc = sb.instantiateViewControllerWithIdentifier("ProductListViewController") as! UIViewController
+        let vc = sb.instantiateViewControllerWithIdentifier("ProductCollectionViewController") as! UIViewController
         //self.presentViewController(vc, animated: true, completion: nil)
         self.navigationController?.pushViewController(vc, animated: true)
     }

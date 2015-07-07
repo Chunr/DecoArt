@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Yy5-r7-Ie2">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -22,10 +23,10 @@
             </objects>
             <point key="canvasLocation" x="1200" y="1630"/>
         </scene>
-        <!--View Controller-->
+        <!--Product Collection View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="ProductListViewController" id="BYZ-38-t0r" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ProductCollectionViewController" id="BYZ-38-t0r" customClass="ProductCollectionViewController" customModule="RealityArt" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -34,8 +35,53 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j4J-e1-p5l">
-                                <rect key="frame" x="16" y="72" width="46" height="30"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="d32-gC-gfl">
+                                <rect key="frame" x="0.0" y="58" width="600" height="542"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="0.0" id="X8N-d4-9ar">
+                                    <size key="itemSize" width="185" height="240"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ImageCell" id="y6i-Xh-8qZ" customClass="ProductCollectionViewCell" customModule="RealityArt" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="185" height="240"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MainListItem" translatesAutoresizingMaskIntoConstraints="NO" id="Gox-SI-Cpd">
+                                                    <rect key="frame" x="0.0" y="0.0" width="185" height="203"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DZv-Ok-tpA">
+                                                    <rect key="frame" x="71" y="211" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstAttribute="trailingMargin" secondItem="Gox-SI-Cpd" secondAttribute="trailing" constant="-8" id="LQ1-Xc-vO4"/>
+                                            <constraint firstItem="Gox-SI-Cpd" firstAttribute="leading" secondItem="y6i-Xh-8qZ" secondAttribute="leadingMargin" constant="-8" id="ajW-jn-vE8"/>
+                                            <constraint firstAttribute="bottomMargin" secondItem="Gox-SI-Cpd" secondAttribute="bottom" constant="29" id="mEf-zx-hYv"/>
+                                            <constraint firstItem="Gox-SI-Cpd" firstAttribute="top" secondItem="y6i-Xh-8qZ" secondAttribute="topMargin" constant="-8" id="nSL-Je-tUg"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="name" destination="DZv-Ok-tpA" id="oUM-zQ-R1F"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="Ghf-hz-7a2"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Sjh-aj-BDF"/>
+                                </connections>
+                            </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j4J-e1-p5l">
+                                <rect key="frame" x="277" y="0.0" width="46" height="30"/>
                                 <state key="normal" title="Button">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -45,11 +91,23 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="d32-gC-gfl" secondAttribute="trailing" constant="-16" id="7qq-hx-Sc0"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="j4J-e1-p5l" secondAttribute="trailing" constant="261" id="Luc-yG-mqM"/>
+                            <constraint firstItem="d32-gC-gfl" firstAttribute="top" secondItem="j4J-e1-p5l" secondAttribute="bottom" constant="28" id="dPb-eF-Dvl"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="d32-gC-gfl" secondAttribute="bottom" id="f9K-W8-iUa"/>
+                            <constraint firstItem="d32-gC-gfl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="hpU-5b-7CE"/>
+                            <constraint firstItem="j4J-e1-p5l" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="261" id="mSf-dl-13e"/>
+                            <constraint firstItem="j4J-e1-p5l" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="tnW-Sj-mnI"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="productList" destination="d32-gC-gfl" id="Wrm-qp-wXv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="435" y="1822"/>
+            <point key="canvasLocation" x="660" y="1590"/>
         </scene>
         <!--Main-->
         <scene sceneID="3be-9J-tvv">
@@ -91,4 +149,7 @@
             <point key="canvasLocation" x="-494" y="894"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="MainListItem" width="426" height="222"/>
+    </resources>
 </document>

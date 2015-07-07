@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>88C514AA-3463-4288-8F75-955674FF2D52</string>
+	<key>IDESourceControlProjectName</key>
+	<string>RealityArt</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>E610D7DA28444879DE6EEA2A1DF18D6768A35F27</key>
+		<string>https://github.com/Chunr/DecoArt.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>RealityArt/RealityArt.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>E610D7DA28444879DE6EEA2A1DF18D6768A35F27</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/Chunr/DecoArt.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>E610D7DA28444879DE6EEA2A1DF18D6768A35F27</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>E610D7DA28444879DE6EEA2A1DF18D6768A35F27</string>
+			<key>IDESourceControlWCCName</key>
+			<string>DecoArt</string>
+		</dict>
+	</array>
+</dict>
+</plist>

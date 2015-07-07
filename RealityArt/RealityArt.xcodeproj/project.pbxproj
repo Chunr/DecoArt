@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BA31473D1B4BA8EC00B7B6A6 /* ProductCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA31473C1B4BA8EC00B7B6A6 /* ProductCollectionViewController.swift */; };
+		BA3147431B4BB47D00B7B6A6 /* ProductCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3147421B4BB47D00B7B6A6 /* ProductCollectionViewCell.swift */; };
 		BA8D81171B4287C5007C4B28 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8D81161B4287C5007C4B28 /* AppDelegate.swift */; };
 		BA8D81191B4287C5007C4B28 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8D81181B4287C5007C4B28 /* ViewController.swift */; };
 		BA8D811C1B4287C5007C4B28 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA8D811A1B4287C5007C4B28 /* Main.storyboard */; };
@@ -29,6 +31,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BA31473C1B4BA8EC00B7B6A6 /* ProductCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductCollectionViewController.swift; sourceTree = "<group>"; };
+		BA3147421B4BB47D00B7B6A6 /* ProductCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductCollectionViewCell.swift; sourceTree = "<group>"; };
 		BA8D81111B4287C5007C4B28 /* RealityArt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RealityArt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA8D81151B4287C5007C4B28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BA8D81161B4287C5007C4B28 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -92,6 +96,8 @@
 				BA8D81361B428F44007C4B28 /* MainTableViewController.swift */,
 				BA8D81381B42950A007C4B28 /* MainTableViewCell.swift */,
 				BA8D81391B42950A007C4B28 /* MainTableViewCell.xib */,
+				BA31473C1B4BA8EC00B7B6A6 /* ProductCollectionViewController.swift */,
+				BA3147421B4BB47D00B7B6A6 /* ProductCollectionViewCell.swift */,
 			);
 			path = RealityArt;
 			sourceTree = "<group>";
@@ -224,8 +230,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA8D81191B4287C5007C4B28 /* ViewController.swift in Sources */,
+				BA31473D1B4BA8EC00B7B6A6 /* ProductCollectionViewController.swift in Sources */,
 				BA8D81371B428F44007C4B28 /* MainTableViewController.swift in Sources */,
 				BA8D813A1B42950A007C4B28 /* MainTableViewCell.swift in Sources */,
+				BA3147431B4BB47D00B7B6A6 /* ProductCollectionViewCell.swift in Sources */,
 				BA8D81171B4287C5007C4B28 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
