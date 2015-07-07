@@ -69,7 +69,7 @@ class MainTableViewController: UITableViewController, UITableViewDelegate, UITab
         
         var cell = self.mainList.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! MainTableViewCell
         cell.name.text = self.items[indexPath.row]
-        
+        cell.selectionStyle = UITableViewCellSelectionStyle.None
         return cell
     }
 
