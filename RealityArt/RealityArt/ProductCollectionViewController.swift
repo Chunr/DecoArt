@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ProductCollectionViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
+class ProductCollectionViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     
     @IBOutlet
     var productList: UICollectionView!
@@ -45,13 +45,19 @@ class ProductCollectionViewController: UIViewController, UICollectionViewDataSou
         return cell
     }
     
-    /*
-    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAtIndex section: Int) -> CGFloat {
-        return 1
+    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
+        var width : CGFloat
+        if (self.view.frame.size.width > 500) {
+            width = self.view.frame.size.width / 3
+        } else {
+            width = self.view.frame.size.width / 2
+        }
+        return CGSizeMake(width - 5, width)
     }
     
-    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAtIndex section: Int) -> CGFloat {
-        return 3
+    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        let sb = UIStoryboard(name:"Main", bundle: nil)
+        let vc = sb.instantiateViewControllerWithIdentifier("ProductViewController") as! UIViewController
+        self.navigationController?.pushViewController(vc, animated: true)
     }
-*/
 }
