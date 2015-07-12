@@ -5,10 +5,10 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Product View Controller-->
         <scene sceneID="Khy-pl-r0p">
             <objects>
-                <viewController storyboardIdentifier="ProductViewController" id="h4W-UI-sKF" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ProductViewController" id="h4W-UI-sKF" customClass="ProductViewController" customModule="RealityArt" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="DSk-DG-hQk"/>
                         <viewControllerLayoutGuide type="bottom" id="2Bg-Zr-yTf"/>
@@ -16,7 +16,23 @@
                     <view key="view" contentMode="scaleToFill" id="PDj-et-lUb">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c8N-KA-VSb">
+                                <rect key="frame" x="26" y="30" width="548" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="openLiveView:" destination="h4W-UI-sKF" eventType="touchUpInside" id="l6K-T4-S04"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="c8N-KA-VSb" firstAttribute="top" secondItem="DSk-DG-hQk" secondAttribute="bottom" constant="10" id="16T-MK-yDt"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="c8N-KA-VSb" secondAttribute="trailing" constant="10" id="e0a-e9-jQz"/>
+                            <constraint firstItem="c8N-KA-VSb" firstAttribute="leading" secondItem="PDj-et-lUb" secondAttribute="leadingMargin" constant="10" id="eYf-af-55Z"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HzB-3E-oru" userLabel="First Responder" sceneMemberID="firstResponder"/>

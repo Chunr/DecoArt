@@ -26,7 +26,6 @@ class MainTableViewController: UITableViewController, UITableViewDelegate, UITab
         //self.mainList.registerClass(UITableViewCell.self, forCellReuseIdentifier: "cell")
         var nib = UINib(nibName: "MainTableViewCell", bundle: nil)
         self.mainList.registerNib(nib, forCellReuseIdentifier: "cell")
-        println("main")
     }
 
     override func didReceiveMemoryWarning() {
