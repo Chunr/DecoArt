@@ -17,5 +17,8 @@ class ProductPreviewControl: UIView {
         // Drawing code
     }
     */
+    @IBAction func exitPreview(sender: UIButton) {
+        NSLog("Closing preview")
+    }
 
 }

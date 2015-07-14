@@ -10,18 +10,21 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sample" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Oo-xo-pJ9">
-                    <rect key="frame" x="20" y="20" width="560" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Hi-LP-K0f">
+                    <rect key="frame" x="0.0" y="8" width="600" height="30"/>
+                    <state key="normal" title="Close">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="exitPreview:" destination="iN0-l3-epB" eventType="touchUpInside" id="anX-U9-xOH"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="3Oo-xo-pJ9" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="5wq-Ar-rcl"/>
-                <constraint firstAttribute="trailing" secondItem="3Oo-xo-pJ9" secondAttribute="trailing" constant="20" id="LoR-Hu-be2"/>
-                <constraint firstItem="3Oo-xo-pJ9" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="Ro9-qU-CcO"/>
+                <constraint firstItem="0Hi-LP-K0f" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="56N-4Z-wA2"/>
+                <constraint firstAttribute="trailing" secondItem="0Hi-LP-K0f" secondAttribute="trailing" id="SXm-D8-RZs"/>
+                <constraint firstItem="0Hi-LP-K0f" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="nVO-XW-KYW"/>
             </constraints>
             <point key="canvasLocation" x="389" y="355"/>
         </view>
