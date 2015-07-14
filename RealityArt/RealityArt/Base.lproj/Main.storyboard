@@ -19,11 +19,11 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c8N-KA-VSb">
                                 <rect key="frame" x="26" y="30" width="548" height="30"/>
-                                <state key="normal" title="Button">
+                                <state key="normal" title="Preview">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="openLiveView:" destination="h4W-UI-sKF" eventType="touchUpInside" id="l6K-T4-S04"/>
+                                    <action selector="openPreview:" destination="h4W-UI-sKF" eventType="touchUpInside" id="m67-4a-77J"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -38,6 +38,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HzB-3E-oru" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="770" y="1874"/>
+        </scene>
+        <!--Product Preview View Controller-->
+        <scene sceneID="PcQ-Tc-IcO">
+            <objects>
+                <viewController storyboardIdentifier="ProductPreviewViewController" id="aV1-3d-dKd" customClass="ProductPreviewViewController" customModule="RealityArt" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="C9h-Fg-aKb"/>
+                        <viewControllerLayoutGuide type="bottom" id="npz-a3-IKM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KHT-08-FMi">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Hj-AV-tzN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1570" y="1840"/>
         </scene>
         <!--Product Collection View Controller-->
         <scene sceneID="tne-QT-ifu">

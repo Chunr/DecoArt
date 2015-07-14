@@ -10,6 +10,7 @@
 		73EE4F171B52357F00A211A2 /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73EE4F161B52357F00A211A2 /* ProductViewController.swift */; };
 		73EE4F191B54DFCC00A211A2 /* ProductPreviewControl.xib in Resources */ = {isa = PBXBuildFile; fileRef = 73EE4F181B54DFCC00A211A2 /* ProductPreviewControl.xib */; };
 		73EE4F1B1B54E10D00A211A2 /* ProductPreviewControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73EE4F1A1B54E10D00A211A2 /* ProductPreviewControl.swift */; };
+		73EE4F1D1B54EB4700A211A2 /* ProductPreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73EE4F1C1B54EB4700A211A2 /* ProductPreviewViewController.swift */; };
 		BA31473D1B4BA8EC00B7B6A6 /* ProductCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA31473C1B4BA8EC00B7B6A6 /* ProductCollectionViewController.swift */; };
 		BA3147431B4BB47D00B7B6A6 /* ProductCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3147421B4BB47D00B7B6A6 /* ProductCollectionViewCell.swift */; };
 		BA8D81171B4287C5007C4B28 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8D81161B4287C5007C4B28 /* AppDelegate.swift */; };
@@ -37,6 +38,7 @@
 		73EE4F161B52357F00A211A2 /* ProductViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
 		73EE4F181B54DFCC00A211A2 /* ProductPreviewControl.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProductPreviewControl.xib; sourceTree = "<group>"; };
 		73EE4F1A1B54E10D00A211A2 /* ProductPreviewControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductPreviewControl.swift; sourceTree = "<group>"; };
+		73EE4F1C1B54EB4700A211A2 /* ProductPreviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductPreviewViewController.swift; sourceTree = "<group>"; };
 		BA31473C1B4BA8EC00B7B6A6 /* ProductCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductCollectionViewController.swift; sourceTree = "<group>"; };
 		BA3147421B4BB47D00B7B6A6 /* ProductCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductCollectionViewCell.swift; sourceTree = "<group>"; };
 		BA8D81111B4287C5007C4B28 /* RealityArt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RealityArt.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -107,6 +109,7 @@
 				73EE4F161B52357F00A211A2 /* ProductViewController.swift */,
 				73EE4F181B54DFCC00A211A2 /* ProductPreviewControl.xib */,
 				73EE4F1A1B54E10D00A211A2 /* ProductPreviewControl.swift */,
+				73EE4F1C1B54EB4700A211A2 /* ProductPreviewViewController.swift */,
 			);
 			path = RealityArt;
 			sourceTree = "<group>";
@@ -246,6 +249,7 @@
 				73EE4F171B52357F00A211A2 /* ProductViewController.swift in Sources */,
 				BA8D813A1B42950A007C4B28 /* MainTableViewCell.swift in Sources */,
 				BA3147431B4BB47D00B7B6A6 /* ProductCollectionViewCell.swift in Sources */,
+				73EE4F1D1B54EB4700A211A2 /* ProductPreviewViewController.swift in Sources */,
 				BA8D81171B4287C5007C4B28 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

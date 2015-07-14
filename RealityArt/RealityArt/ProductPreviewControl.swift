@@ -18,7 +18,7 @@ class ProductPreviewControl: UIView {
     }
     */
     @IBAction func exitPreview(sender: UIButton) {
-        NSLog("Closing preview")
+        self.removeFromSuperview()
     }
 
 }
