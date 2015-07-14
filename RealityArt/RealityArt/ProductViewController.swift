@@ -34,7 +34,7 @@ class ProductViewController: UIViewController {
         }
         
         if self.captureDevice != nil {
-            beginSession()
+            self.beginPreview()
         }
     }
 
@@ -50,7 +50,7 @@ class ProductViewController: UIViewController {
     }
     
 
-    func beginSession() {
+    func beginPreview() {
         self.configureDevice()
         
         var err : NSError? = nil
@@ -63,14 +63,20 @@ class ProductViewController: UIViewController {
         var minSize = min(self.view.bounds.size.width, self.view.bounds.size.height)
         var bounds: CGRect = CGRectMake(0.0, 0.0, minSize, minSize)
         
-        
         self.previewLayer = AVCaptureVideoPreviewLayer(session: self.captureSession)
         self.previewLayer?.bounds = bounds
         self.previewLayer?.position = CGPointMake(CGRectGetMidX(self.view.bounds), CGRectGetMidY(self.view.bounds))
         self.previewLayer?.videoGravity = AVLayerVideoGravityResizeAspectFill
         self.previewLayer?.frame = self.view.layer.frame
+        
         self.view.layer.addSublayer(self.previewLayer)
         self.captureSession.startRunning()
+        
+        
+        var previewControl = (NSBundle.mainBundle().loadNibNamed("ProductPreviewControl", owner: self, options: nil) as NSArray)[0]
+            as! ProductPreviewControl
+        previewControl.frame = CGRect(x: 0, y: 200, width: bounds.width, height: 100)
+        self.view.addSubview(previewControl)
     }
     
     func configureDevice() {
