@@ -12,11 +12,9 @@ class ProductViewController: UIViewController {
     
     @IBAction
     func openPreview(sender: UIButton) {
-        
-        
         let sb = UIStoryboard(name:"Main", bundle: nil)
         let vc = sb.instantiateViewControllerWithIdentifier("ProductPreviewViewController") as! UIViewController
-        self.navigationController?.pushViewController(vc, animated: true)
+        self.navigationController?.presentViewController(vc, animated: true, completion: nil)
     }
 
     override func viewDidLoad() {
