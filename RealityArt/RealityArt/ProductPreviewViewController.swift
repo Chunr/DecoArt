@@ -62,10 +62,10 @@ class ProductPreviewViewController: UIViewController {
         
         //Setup preview layer
         self.previewLayer = AVCaptureVideoPreviewLayer(session: self.captureSession)
-        self.previewLayer?.bounds = bounds
-        self.previewLayer?.position = CGPointMake(CGRectGetMidX(self.view.bounds), CGRectGetMidY(self.view.bounds))
-        self.previewLayer?.videoGravity = AVLayerVideoGravityResizeAspectFill
-        self.previewLayer?.frame = self.view.layer.frame
+        self.previewLayer!.bounds = bounds
+        self.previewLayer!.position = CGPointMake(CGRectGetMidX(self.view.bounds), CGRectGetMidY(self.view.bounds))
+        self.previewLayer!.videoGravity = AVLayerVideoGravityResizeAspectFill
+        self.previewLayer!.frame = self.view.layer.frame
         
         self.view.layer.addSublayer(self.previewLayer)
         self.captureSession.startRunning()

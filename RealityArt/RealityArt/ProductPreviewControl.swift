@@ -11,16 +11,9 @@ import UIKit
 class ProductPreviewControl: UIView {
 
     var productPreviewViewController: ProductPreviewViewController?
-    
-    /*
-    // Only override drawRect: if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func drawRect(rect: CGRect) {
-        // Drawing code
-    }
-    */
+  
     @IBAction func exitPreview(sender: UIButton) {
-        self.productPreviewViewController?.dismissViewControllerAnimated(true, completion: nil)
+        self.productPreviewViewController!.dismissViewControllerAnimated(true, completion: nil)
     }
 
     func setParentViewController(viewController : ProductPreviewViewController) {
