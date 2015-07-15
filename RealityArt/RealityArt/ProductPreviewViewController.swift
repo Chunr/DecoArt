@@ -76,6 +76,13 @@ class ProductPreviewViewController: UIViewController {
         self.previewControl!.frame = CGRect(x: 0, y: 200, width: bounds.width, height: 100)
         self.previewControl!.setParentViewController(self)
         self.view.addSubview(self.previewControl!)
+        
+        //Setup preview product
+        var button = UIButton()
+        button.backgroundColor = UIColor.brownColor()
+        button.frame = CGRect(x: 10, y: 10, width: 200, height: 200)
+        button.setImage(UIImage(named: "MainListItem"), forState: UIControlState.Normal)
+        self.view.addSubview(button)
     }
     
     func configureDevice() {
