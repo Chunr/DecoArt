@@ -1,5 +1,5 @@
 //
-//  Frame.swift
+//  Product.swift
 //  RealityArt
 //
 //  Created by Chun Chen on 7/15/15.
@@ -7,7 +7,3 @@
 //
 
 import Foundation
-
-public class Frame {
-    
-}
