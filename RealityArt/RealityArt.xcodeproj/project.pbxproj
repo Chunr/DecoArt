@@ -26,6 +26,7 @@
 		BA8D81371B428F44007C4B28 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8D81361B428F44007C4B28 /* MainTableViewController.swift */; };
 		BA8D813A1B42950A007C4B28 /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8D81381B42950A007C4B28 /* MainTableViewCell.swift */; };
 		BA8D813B1B42950A007C4B28 /* MainTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA8D81391B42950A007C4B28 /* MainTableViewCell.xib */; };
+		BA92BC541B579FF20010BD1D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA92BC531B579FF20010BD1D /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		BA8D81361B428F44007C4B28 /* MainTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
 		BA8D81381B42950A007C4B28 /* MainTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
 		BA8D81391B42950A007C4B28 /* MainTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainTableViewCell.xib; sourceTree = "<group>"; };
+		BA92BC531B579FF20010BD1D /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +132,7 @@
 				73EE4F1A1B54E10D00A211A2 /* ProductPreviewControl.swift */,
 				73EE4F1C1B54EB4700A211A2 /* ProductPreviewViewController.swift */,
 				732E14071B56B5FB0006D0A7 /* Model */,
+				BA92BC531B579FF20010BD1D /* Constants.swift */,
 			);
 			path = RealityArt;
 			sourceTree = "<group>";
@@ -273,6 +276,7 @@
 				BA3147431B4BB47D00B7B6A6 /* ProductCollectionViewCell.swift in Sources */,
 				73EE4F1D1B54EB4700A211A2 /* ProductPreviewViewController.swift in Sources */,
 				BA8D81171B4287C5007C4B28 /* AppDelegate.swift in Sources */,
+				BA92BC541B579FF20010BD1D /* Constants.swift in Sources */,
 				732E14061B56B5EB0006D0A7 /* Image.swift in Sources */,
 				732E14041B56ABC70006D0A7 /* Frame.swift in Sources */,
 			);
