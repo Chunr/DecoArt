@@ -6,4 +6,12 @@
 //  Copyright (c) 2015 Chun Chen. All rights reserved.
 //
 
-import Foundation
+public class Product {
+    
+    var id : Int?
+    
+    var name : String? = nil
+    
+    var imageId : Int? = nil
+    
+}

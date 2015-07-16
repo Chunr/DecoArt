@@ -34,7 +34,7 @@ class MainTableViewController: UITableViewController, UITableViewDelegate, UITab
     }
     
     override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        return CGFloat(132)
+        return CGFloat(self.view.frame.size.width * 9 / 16)
     }
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {

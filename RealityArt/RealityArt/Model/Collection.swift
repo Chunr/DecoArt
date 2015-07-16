@@ -6,4 +6,14 @@
 //  Copyright (c) 2015 Chun Chen. All rights reserved.
 //
 
-import Foundation
+public class Collection {
+    
+    var id : Int?
+    
+    var name : String? = nil
+    
+    var imageId : Int? = nil
+    
+    var images : Array<Image>?
+    
+}
