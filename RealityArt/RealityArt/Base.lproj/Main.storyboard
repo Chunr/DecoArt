@@ -87,8 +87,11 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Gox-SI-Cpd">
-                                                    <rect key="frame" x="8" y="8" width="284" height="297"/>
+                                                    <rect key="frame" x="8" y="8" width="284" height="250"/>
                                                     <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="250" id="gjD-aE-QDj"/>
+                                                    </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rZI-Q2-bBI">
                                                     <rect key="frame" x="8" y="325" width="284" height="20"/>
@@ -111,7 +114,6 @@
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
-                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstItem="rZI-Q2-bBI" firstAttribute="leading" secondItem="y6i-Xh-8qZ" secondAttribute="leadingMargin" id="29Y-uY-DqO"/>
                                             <constraint firstItem="Gox-SI-Cpd" firstAttribute="trailing" secondItem="y6i-Xh-8qZ" secondAttribute="trailingMargin" id="50a-XW-Wew"/>
@@ -124,6 +126,11 @@
                                             <constraint firstItem="rZI-Q2-bBI" firstAttribute="bottom" secondItem="y6i-Xh-8qZ" secondAttribute="bottomMargin" id="Ygl-zE-02g"/>
                                             <constraint firstItem="rZI-Q2-bBI" firstAttribute="top" secondItem="DZv-Ok-tpA" secondAttribute="bottom" id="jdp-Up-dTx"/>
                                         </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="Rqu-BM-ItZ"/>
+                                            </mask>
+                                        </variation>
                                         <connections>
                                             <outlet property="cover" destination="Gox-SI-Cpd" id="BON-P1-KNS"/>
                                             <outlet property="name" destination="DZv-Ok-tpA" id="oUM-zQ-R1F"/>

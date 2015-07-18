@@ -35,6 +35,7 @@ class ProductCollectionViewCell: UICollectionViewCell {
                 var image = UIImage(data: data)
                 ProductCollectionViewCell.productImages[product.imageId!] = image
                 self.cover.image = image
+                self.cover.frame = CGRect(origin: self.cover.frame.origin, size: CGSize(width: self.cover.frame.width, height: self.cover.frame.width))
             })
         }
     }
