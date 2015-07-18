@@ -12,6 +12,8 @@ class MainTableViewController: UITableViewController, UITableViewDelegate, UITab
 
     private var mainItems : [MainItem]?
     
+    private var mainItemImages = [Int : UIImage]()
+    
     @IBOutlet
     var mainList: UITableView!
 
@@ -46,7 +48,8 @@ class MainTableViewController: UITableViewController, UITableViewDelegate, UITab
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         var cell = self.mainList.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! MainTableViewCell
-        cell.name.text = self.mainItems![indexPath.row].description
+        var mainItem = self.mainItems![indexPath.row]
+        cell.setup(mainItem)
         cell.selectionStyle = UITableViewCellSelectionStyle.None
         return cell
     }

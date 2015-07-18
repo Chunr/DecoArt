@@ -14,7 +14,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MainListItem" translatesAutoresizingMaskIntoConstraints="NO" id="x7p-Dk-hqg">
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="x7p-Dk-hqg">
                         <rect key="frame" x="-8" y="0.0" width="428" height="220"/>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" alpha="0.90000000000000002" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NbA-vC-DcQ" userLabel="DescriptionContainer">
@@ -52,12 +52,10 @@
                 </constraints>
             </tableViewCellContentView>
             <connections>
+                <outlet property="cover" destination="x7p-Dk-hqg" id="qiO-pK-oca"/>
                 <outlet property="name" destination="1l0-rH-i9Q" id="odG-uW-PnE"/>
             </connections>
             <point key="canvasLocation" x="228" y="212"/>
         </tableViewCell>
     </objects>
-    <resources>
-        <image name="MainListItem" width="426" height="222"/>
-    </resources>
 </document>

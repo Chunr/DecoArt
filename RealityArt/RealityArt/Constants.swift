@@ -10,4 +10,5 @@ public struct Constants {
     
     static let UI_MAIN_TABLE_CELL_RATIO : Float = 9.0 / 16.0
     
+    static let URL_IMAGE_MAIN_BASE : String = "http://whzb009594.my3w.com/bundle/Test/Main/"
 }
