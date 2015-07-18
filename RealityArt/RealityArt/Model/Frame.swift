@@ -7,7 +7,7 @@
 //
 
 
-public class Frame {
+class Frame {
     
     var id : Int?
     

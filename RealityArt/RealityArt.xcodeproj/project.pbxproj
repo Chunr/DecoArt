@@ -11,6 +11,8 @@
 		732E14061B56B5EB0006D0A7 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732E14051B56B5EB0006D0A7 /* Image.swift */; };
 		732E140B1B56B7D30006D0A7 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732E140A1B56B7D30006D0A7 /* Product.swift */; };
 		732E140D1B56B7E50006D0A7 /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732E140C1B56B7E50006D0A7 /* Collection.swift */; };
+		736079C41B5A3B4300D52BFC /* MainItemListLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736079C31B5A3B4300D52BFC /* MainItemListLoader.swift */; };
+		736079C71B5A3C0800D52BFC /* MainItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736079C61B5A3C0800D52BFC /* MainItem.swift */; };
 		73EE4F171B52357F00A211A2 /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73EE4F161B52357F00A211A2 /* ProductViewController.swift */; };
 		73EE4F191B54DFCC00A211A2 /* ProductPreviewControl.xib in Resources */ = {isa = PBXBuildFile; fileRef = 73EE4F181B54DFCC00A211A2 /* ProductPreviewControl.xib */; };
 		73EE4F1B1B54E10D00A211A2 /* ProductPreviewControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73EE4F1A1B54E10D00A211A2 /* ProductPreviewControl.swift */; };
@@ -44,6 +46,8 @@
 		732E14051B56B5EB0006D0A7 /* Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Image.swift; path = Model/Image.swift; sourceTree = "<group>"; };
 		732E140A1B56B7D30006D0A7 /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Product.swift; path = Model/Product.swift; sourceTree = "<group>"; };
 		732E140C1B56B7E50006D0A7 /* Collection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Collection.swift; path = Model/Collection.swift; sourceTree = "<group>"; };
+		736079C31B5A3B4300D52BFC /* MainItemListLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainItemListLoader.swift; path = IO/MainItemListLoader.swift; sourceTree = "<group>"; };
+		736079C61B5A3C0800D52BFC /* MainItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainItem.swift; sourceTree = "<group>"; };
 		73EE4F161B52357F00A211A2 /* ProductViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
 		73EE4F181B54DFCC00A211A2 /* ProductPreviewControl.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProductPreviewControl.xib; sourceTree = "<group>"; };
 		73EE4F1A1B54E10D00A211A2 /* ProductPreviewControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductPreviewControl.swift; sourceTree = "<group>"; };
@@ -91,8 +95,17 @@
 				732E14051B56B5EB0006D0A7 /* Image.swift */,
 				732E140A1B56B7D30006D0A7 /* Product.swift */,
 				732E140C1B56B7E50006D0A7 /* Collection.swift */,
+				736079C61B5A3C0800D52BFC /* MainItem.swift */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		736079C51B5A3B5600D52BFC /* IO */ = {
+			isa = PBXGroup;
+			children = (
+				736079C31B5A3B4300D52BFC /* MainItemListLoader.swift */,
+			);
+			name = IO;
 			sourceTree = "<group>";
 		};
 		BA8D81081B4287C5007C4B28 = {
@@ -133,6 +146,7 @@
 				73EE4F1C1B54EB4700A211A2 /* ProductPreviewViewController.swift */,
 				732E14071B56B5FB0006D0A7 /* Model */,
 				BA92BC531B579FF20010BD1D /* Constants.swift */,
+				736079C51B5A3B5600D52BFC /* IO */,
 			);
 			path = RealityArt;
 			sourceTree = "<group>";
@@ -265,6 +279,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				736079C41B5A3B4300D52BFC /* MainItemListLoader.swift in Sources */,
 				BA8D81191B4287C5007C4B28 /* ViewController.swift in Sources */,
 				BA31473D1B4BA8EC00B7B6A6 /* ProductCollectionViewController.swift in Sources */,
 				73EE4F1B1B54E10D00A211A2 /* ProductPreviewControl.swift in Sources */,
@@ -277,6 +292,7 @@
 				73EE4F1D1B54EB4700A211A2 /* ProductPreviewViewController.swift in Sources */,
 				BA8D81171B4287C5007C4B28 /* AppDelegate.swift in Sources */,
 				BA92BC541B579FF20010BD1D /* Constants.swift in Sources */,
+				736079C71B5A3C0800D52BFC /* MainItem.swift in Sources */,
 				732E14061B56B5EB0006D0A7 /* Image.swift in Sources */,
 				732E14041B56ABC70006D0A7 /* Frame.swift in Sources */,
 			);

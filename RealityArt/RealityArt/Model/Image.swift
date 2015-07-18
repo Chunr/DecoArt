@@ -6,7 +6,7 @@
 //  Copyright (c) 2015 Chun Chen. All rights reserved.
 //
 
-public class Image {
+class Image {
     
     var id : Int?
     
