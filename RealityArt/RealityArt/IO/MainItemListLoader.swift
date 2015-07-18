@@ -9,7 +9,7 @@
 class MainItemListLoader {
     
     static func load() -> [MainItem] {
-        var items : [MainItem] = [MainItem]()
+        var items = [MainItem]()
         items.append(get(1, imageId: 1, description: "This is a beautiful collection"))
         items.append(get(2, imageId: 2, description: "Sed ut perspiciatis unde omnis iste natus"))
         items.append(get(3, imageId: 3, description: "Sit voluptatem accusantium doloremque laudantium"))

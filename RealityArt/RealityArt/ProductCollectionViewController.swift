@@ -10,13 +10,14 @@ import UIKit
 
 class ProductCollectionViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     
+    private var products = [Product]()
+    
     @IBOutlet
     var productList: UICollectionView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        self.products = ProductListLoader.load()
     }
 
     override func didReceiveMemoryWarning() {
@@ -34,13 +35,13 @@ class ProductCollectionViewController: UIViewController, UICollectionViewDataSou
     }
     */
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        //#warning Incomplete method implementation -- Return the number of items in the section
-        return 10
+        return self.products.count
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        let cell = self.productList.dequeueReusableCellWithReuseIdentifier("ImageCell", forIndexPath: indexPath) as! ProductCollectionViewCell
-        cell.name.text = "F"
+        let cell = self.productList.dequeueReusableCellWithReuseIdentifier("ProductCell", forIndexPath: indexPath) as! ProductCollectionViewCell
+        var product = self.products[indexPath.row]
+        cell.setup(product)
         return cell
     }
     
@@ -51,7 +52,8 @@ class ProductCollectionViewController: UIViewController, UICollectionViewDataSou
         } else {
             width = self.view.frame.size.width / 2
         }
-        return CGSizeMake(width - 5, width)
+        width = width - 5
+        return CGSizeMake(width, width * 1.25)
     }
     
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {

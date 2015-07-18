@@ -14,4 +14,5 @@ class Product {
     
     var imageId : Int? = nil
     
+    var price : Int?
 }
