@@ -36,6 +36,7 @@ class MainTableViewCell: UITableViewCell {
         if let image = MainTableViewCell.mainItemImages[mainItem.imageId!] {
             self.cover.image = image
         } else {
+            self.cover.image = nil
             var url = NSURL(string: "\(Constants.URL_IMAGE_MAIN_BASE)\(mainItem.imageId!).jpg")
             var request: NSURLRequest = NSURLRequest(URL: url!)
             NSURLConnection.sendAsynchronousRequest(request, queue: NSOperationQueue.mainQueue(), completionHandler: {(response: NSURLResponse!, data: NSData!, error: NSError!) -> Void in

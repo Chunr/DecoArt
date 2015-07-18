@@ -14,8 +14,7 @@ class MainTableViewController: UITableViewController, UITableViewDelegate, UITab
     
     private var mainItemImages = [Int : UIImage]()
     
-    @IBOutlet
-    var mainList: UITableView!
+    @IBOutlet weak var mainList: UITableView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
