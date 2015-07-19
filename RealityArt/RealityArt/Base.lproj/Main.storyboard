@@ -88,7 +88,7 @@
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Gox-SI-Cpd">
                                                     <rect key="frame" x="8" y="8" width="284" height="250"/>
-                                                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                    <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803926" alpha="1" colorSpace="calibratedRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="250" id="gjD-aE-QDj"/>
                                                     </constraints>
@@ -108,7 +108,7 @@
                                                         <constraint firstAttribute="height" constant="20" id="X6Z-Cx-psz"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -120,17 +120,11 @@
                                             <constraint firstItem="Gox-SI-Cpd" firstAttribute="top" secondItem="y6i-Xh-8qZ" secondAttribute="topMargin" id="MRU-d1-6tt"/>
                                             <constraint firstItem="Gox-SI-Cpd" firstAttribute="leading" secondItem="y6i-Xh-8qZ" secondAttribute="leadingMargin" id="OMz-d7-SRj"/>
                                             <constraint firstItem="DZv-Ok-tpA" firstAttribute="trailing" secondItem="y6i-Xh-8qZ" secondAttribute="trailingMargin" id="QGg-M9-anK"/>
-                                            <constraint firstItem="DZv-Ok-tpA" firstAttribute="top" secondItem="Gox-SI-Cpd" secondAttribute="bottom" id="Rqu-BM-ItZ"/>
                                             <constraint firstItem="DZv-Ok-tpA" firstAttribute="leading" secondItem="y6i-Xh-8qZ" secondAttribute="leadingMargin" id="UXW-Ig-NRW"/>
                                             <constraint firstItem="rZI-Q2-bBI" firstAttribute="trailing" secondItem="y6i-Xh-8qZ" secondAttribute="trailingMargin" id="XZq-QU-FRB"/>
                                             <constraint firstItem="rZI-Q2-bBI" firstAttribute="bottom" secondItem="y6i-Xh-8qZ" secondAttribute="bottomMargin" id="Ygl-zE-02g"/>
                                             <constraint firstItem="rZI-Q2-bBI" firstAttribute="top" secondItem="DZv-Ok-tpA" secondAttribute="bottom" id="jdp-Up-dTx"/>
                                         </constraints>
-                                        <variation key="default">
-                                            <mask key="constraints">
-                                                <exclude reference="Rqu-BM-ItZ"/>
-                                            </mask>
-                                        </variation>
                                         <connections>
                                             <outlet property="cover" destination="Gox-SI-Cpd" id="BON-P1-KNS"/>
                                             <outlet property="name" destination="DZv-Ok-tpA" id="oUM-zQ-R1F"/>
